@@ -249,6 +249,8 @@ public class PhysicsFactory {
 
 		boxPoly.dispose();
 
+		boxBody.setTransform(boxBody.getWorldCenter(), MathUtils.degToRad(pShape.getRotation()));
+
 		return boxBody;
 	}
 
